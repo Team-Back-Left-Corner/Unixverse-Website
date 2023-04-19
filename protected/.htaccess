@@ -1,0 +1,5 @@
+AuthName "Restricted Area"
+AuthType Basic
+#Path to the htpasswd file
+AuthUserFile /home/MAIN/iste240t54/.htpasswd
+require valid-user

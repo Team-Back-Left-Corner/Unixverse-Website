@@ -1,0 +1,6 @@
+The inc folder is the place for all PHP functions of the theme. The functions. php just includes all these files. 
+The functions are – if possible and sensible – grouped into various files.
+
+Example:
+footer.php
+header.php
