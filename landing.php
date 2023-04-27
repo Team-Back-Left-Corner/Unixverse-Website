@@ -1,35 +1,12 @@
 <?php
 		session_name("iste240t54");
 		session_start();
-    
-		include('../dbcon.php');
-	
-		if(!empty($_POST['uname']) && !empty($_POST['pass'])) {
-			$uname = $_POST['uname'];
-			$pass = $_POST['pass'];
-	
-			$sql = "SELECT * FROM `unixverse_users` WHERE `uname` = ? LIMIT 1;";
-			$stmt = $conn->prepare($sql);
-			$stmt->bind_param("s",$uname);
-			$stmt->execute();
-			$results = $stmt->get_result();
-	
-			while($row = $results->fetch_assoc()) {
-				if(password_verify($pass,$row['pass'])) {
-					$_SESSION['uname'] = $row['uname'];
-					$_SESSION['name'] = $row['name'];
-					$_SESSION['login'] = true;
-					header("Location: landing.php");
-				}
-				else {
-					die("you entered an invalid uname or pswd.");
-				}
-			}
-		
-			die("There was a problem logging you in :(");
-		}
-?>
 
+		if(empty($_SESSION['uname'])){
+			die("Need Auth :(");
+		}
+	
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -40,8 +17,9 @@
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-	<div class="login-form">
-		<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1612.42 539.29">
+
+	<div class="sidebar">
+	<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1612.42 539.29">
 			<defs>
 				<style>
 				.cls-1 {
@@ -83,22 +61,16 @@
 				<path d="m1572.59,443.41v-39.25h4.17c7.66,9.88,24.65,31.32,26.74,35.02h.11c-.33-5.63-.28-11.22-.28-17.55v-17.48h3.31v39.25h-3.99c-6.97-8.89-23.86-30.94-26.92-35.55h-.11c.28,5.16.28,10.71.28,17.64v17.91h-3.31Z"/>
 			</g>
 		</svg>
-
-		<form action = "<?php echo $_SERVER['PHP_SELF']; ?>" method="POST">
-			<div>
-				User Name:
-				<input type="text" name="uname" size="30" />
-			</div>
-			<div>
-				Password:
-				<input type="password" name="pass" size="30" />
-			</div>
-			<div class="clearfix">
-				<input type="submit" value="Log In" />
-				<br>
-				<input type="button" value="Register" onclick="window.location='register.php'" />
-			</div>	
-		</form>
+	<ul>
+		<li><a href="#">Sections</a></li>
+		<li><a href="#">Quizzes</a></li>
+		<li><a href="#">About us</a></li>
+		<li><a href="#">Leave a comment!</a></li>
+	</ul>
+	</div>
+	<div class="mainpage">
+		Hello, <?php echo $_SESSION['name'];?>! Ready to get started?<br/>
+		<a href="clearSession.php">[Log out]</a>
 	</div>
 </body>
 </html>

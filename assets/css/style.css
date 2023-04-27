@@ -1,1 +1,173 @@
 /* This will be our master css file, feel free to create more if need be! */
+body {
+    background: rgb(255,247,172);
+    background: linear-gradient(90deg, rgba(255,247,172,1) 30%, rgba(255,171,248,1) 63%);
+    font-family: 'Open Sans', sans-serif;
+}
+
+.login-form {
+    background: rgb(205,254,216);
+    background: linear-gradient(90deg, rgba(205,254,216,1) 30%, rgba(148,186,255,1) 76%);
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    margin: auto;
+    margin-top: 70px;
+    width: 250px;
+}
+
+.register-form {
+    background: rgb(205,254,216);
+    background: linear-gradient(90deg, rgba(205,254,216,1) 30%, rgba(148,186,255,1) 76%);
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    margin: auto;
+    margin-top: 50px;
+    width: 250px;
+}
+
+input {
+    margin-bottom: 15px;
+}
+
+.sidebar {
+    height: 100%;
+    width: 200px; /* adjust this value as needed */
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #f1f1f1;
+    overflow-x: hidden;
+    padding-top: 20px;
+    padding: 15px;
+  }
+  
+  .sidebar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .sidebar li {
+    padding: 8px 16px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .sidebar li a {
+    display: block;
+    color: #000;
+    text-decoration: none;
+  }
+  
+  .sidebar li a:hover {
+    background-color: #ddd;
+  }  
+
+  .mainpage {
+    margin-left: 250px;
+  }
+
+input[type=submit] {
+    margin-top: 15px;
+    display: inline-block;
+    outline: 0;
+    cursor: pointer;
+    border: 1px solid #000;
+    border-radius: 3px;
+    color: #000;
+    background: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 28px;
+    padding: 5px 20px;
+    text-align:center;
+    transition-duration: .15s;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(.4,0,.2,1);
+}
+
+input[type=reset] {
+    margin-top: 15px;
+    display: inline-block;
+    outline: 0;
+    cursor: pointer;
+    border: 1px solid #000;
+    border-radius: 3px;
+    color: #000;
+    background: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 28px;
+    padding: 5px 20px;
+    text-align:center;
+    transition-duration: .15s;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(.4,0,.2,1);
+}
+
+input[type=button] {
+    margin-top: 15px;
+    display: inline-block;
+    outline: 0;
+    cursor: pointer;
+    border: 1px solid #000;
+    border-radius: 3px;
+    color: #000;
+    background: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 28px;
+    padding: 5px 20px;
+    text-align:center;
+    transition-duration: .15s;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(.4,0,.2,1);
+}
+    
+input[type=submit]:hover {
+    background: rgb(251, 193, 245);
+}
+
+input[type=reset]:hover {
+    background: rgb(251, 193, 245);
+}
+
+input[type=button]:hover {
+    background: rgb(251, 193, 245);
+}
+
+.clearfix {
+    display: inline-flex;   
+}
+
+.clearfix input {
+    margin: 10px;
+}
+  
+
+  
+  
+  
+  
+
+/* form div
+{
+    margin: 1em;
+}
+form div label
+{
+    float: left;
+    width: 10%;
+}
+form div.radio {
+    float: left;
+}
+input{
+   margin-top: 15px;
+}
+.clearfix {
+    clear: both;
+} */
+
