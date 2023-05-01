@@ -46,7 +46,7 @@ input {
 }
 
 .navbar .logo img {
-    height: 100px;
+    height: 125px;
 }
 
 .navbar .nav-links ul {
@@ -121,7 +121,7 @@ input {
 }
 
 /* This is how we can control this different progress bars  */
-.one {
+/* .one {
     --amt: 270deg; 
     background: conic-gradient(rgba(255,171,248,1) var(--amt), rgb(187, 187, 187) 0deg);
 }
@@ -132,7 +132,7 @@ input {
 .three {
     --amt: 180deg; 
     background: conic-gradient(rgba(255,171,248,1) var(--amt), rgb(187, 187, 187) 0deg);
-}
+} */
 
 .circular-progress::before{
     position: absolute;
@@ -194,12 +194,12 @@ input {
     /* margin: 20px; */
 }
 
-.chapter a {
+.link {
     text-decoration: none;
     color: #000;
     transition: 0.2s;
 }
-.chapter a:hover {
+.link:hover {
     text-decoration: none;
     color: #000;
     text-decoration: wavy;
@@ -208,6 +208,30 @@ input {
 
 .chapter:hover {
     box-shadow: 5px 10px 18px #0000004c;
+}
+
+.button-link {
+    margin-top: 15px;
+    display: inline-block;
+    outline: 0;
+    cursor: pointer;
+    border: 1px solid #000;
+    border-radius: 3px;
+    color: #000;
+    background: #fff;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 40px;
+    padding: 5px 20px;
+    text-align:center;
+    transition-duration: .15s;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(.4,0,.2,1);
+}
+
+.button-link:hover{
+    background: rgb(251, 193, 245);
 }
 
 input[type=submit] {

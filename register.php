@@ -10,7 +10,7 @@
 
 
 		if(passMatch()){
-			$sql = "INSERT INTO `unixverse_users` (`uname`, `name`, `pass`) VALUES (?, ?, ?);";
+			$sql = "INSERT INTO `unixverse_users` (`uname`, `name`, `pass`,`quiz_one_hs`, `quiz_two_hs`, `quiz_three_hs`, `quiz_four_hs`, `quiz_five_hs`) VALUES (?, ?, ?, '0', '0', '0', '0', '0');";
 			$stmt = $conn->prepare($sql);
 			$stmt->bind_param("sss", $uname, $name, $pass);
 			$stmt->execute();

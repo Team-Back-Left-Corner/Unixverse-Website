@@ -17,7 +17,13 @@
 			while($row = $results->fetch_assoc()) {
 				if(password_verify($pass,$row['pass'])) {
 					$_SESSION['uname'] = $row['uname'];
+					$_SESSION['id'] = $row['id'];
 					$_SESSION['name'] = $row['name'];
+					$_SESSION['quiz_one_hs'] = $row['quiz_one_hs'];
+					$_SESSION['quiz_two_hs'] = $row['quiz_two_hs'];
+					$_SESSION['quiz_three_hs'] = $row['quiz_three_hs'];
+					$_SESSION['quiz_four_hs'] = $row['quiz_four_hs'];
+					$_SESSION['quiz_five_hs'] = $row['quiz_five_hs'];
 					$_SESSION['login'] = true;
 					header("Location: landing.php");
 				}
