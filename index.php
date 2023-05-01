@@ -34,6 +34,8 @@
 		
 			die("There was a problem logging you in :(");
 		}
+
+$path = "./";
 ?>
 
 <!DOCTYPE html>

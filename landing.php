@@ -8,6 +8,7 @@
 	$amt_one = percentToDegree($course_completion);
     $amt_two = percentToDegree($quiz_average);
     $amt_three = percentToDegree(50);
+	$path = "./";
 ?>
 
 	<div class="dashboard">
