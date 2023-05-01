@@ -5,7 +5,7 @@
 
 		<div class="nav-links">
             <div class="subnav">
-                <a href="<?php echo $path;?>/assets/inc/clearSession.php"><div class="subnavDIV">Log out</div></a>
+                <a href="<?php echo $path;?>assets/inc/clearSession.php"><div class="subnavDIV">Log out</div></a>
             </div>
             <div class="subnav">
                 <div class="subnavDIV">About Us</div>

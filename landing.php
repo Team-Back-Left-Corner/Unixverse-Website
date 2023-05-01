@@ -1,14 +1,6 @@
 <?php
-	session_name("iste240t54");
-	session_start();
-	include("header.php");
-	$completion_amt = $_SESSION['quiz_one_hs'] + $_SESSION['quiz_two_hs'] + $_SESSION['quiz_three_hs'] + $_SESSION['quiz_four_hs'] + $_SESSION['quiz_five_hs'];
-	$course_completion = calculatePercentage($completion_amt, 500);
-	$quiz_average = $completion_amt/5;
-	$amt_one = percentToDegree($course_completion);
-    $amt_two = percentToDegree($quiz_average);
-    $amt_three = percentToDegree(50);
 	$path = "./";
+	include($path . "assets/inc/header.php");
 ?>
 
 	<div class="dashboard">
@@ -65,7 +57,7 @@
 						<li><a class="link" href="#">Section 2 Directory structure / Navigation</a></li>
 					</ul>
 					<div style="display:flex;margin-left:20px;">
-						<a href="chapter_one_quiz.php" class="button-link"/>Chapter Quiz</a>
+						<a href="chapter_one_quiz.php" class="button-link">Chapter Quiz</a>
 						<h4 style="margin-left:20px;">Current Score: <?php echo $_SESSION['quiz_one_hs'];?>%</h4>
 					</div>
 				</div>
@@ -78,7 +70,7 @@
 						<li><a class="link" href="#">Section 3 CHMOD</a></li>
 					</ul>
 					<div style="display:flex;margin-left:20px;">
-						<a href="section_two_quiz.php" class="button-link"/>Chapter Quiz</a>
+						<a href="section_two_quiz.php" class="button-link">Chapter Quiz</a>
 						<h4 style="margin-left:20px;">Current Score: <?php echo $_SESSION['quiz_two_hs'];?>%</h4>
 					</div>
 				</div>
@@ -91,7 +83,7 @@
 						<li><a class="link" href="#">Section 3 Filezilla</a></li>
 					</ul>
 					<div style="display:flex;margin-left:20px;">
-						<a href="section_one_quiz.php" class="button-link"/>Chapter Quiz</a>
+						<a href="section_one_quiz.php" class="button-link">Chapter Quiz</a>
 						<h4 style="margin-left:20px;">Current Score: <?php echo $_SESSION['quiz_three_hs'];?>%</h4>
 					</div>
 				</div>
@@ -106,7 +98,7 @@
 						<li><a class="link" href="#">Section 3 Emacs</a></li>
 					</ul>
 					<div style="display:flex;margin-left:20px;">
-						<a href="section_one_quiz.php" class="button-link"/>Chapter Quiz</a>
+						<a href="section_one_quiz.php" class="button-link">Chapter Quiz</a>
 						<h4 style="margin-left:20px;">Current Score: <?php echo $_SESSION['quiz_four_hs'];?>%</h4>
 					</div>
 				</div>
@@ -118,7 +110,7 @@
 						<li><a class="link" href="#">Section 2 arp + traceroute</a></li>
 					</ul>
 					<div style="display:flex;margin-left:20px;">
-						<a href="chapter_one_quiz.php" class="button-link"/>Chapter Quiz</a>
+						<a href="chapter_one_quiz.php" class="button-link">Chapter Quiz</a>
 						<h4 style="margin-left:20px;">Current Score: <?php echo $_SESSION['quiz_five_hs'];?>%</h4>
 					</div>
 				</div>

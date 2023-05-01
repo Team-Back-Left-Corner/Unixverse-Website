@@ -1,10 +1,31 @@
 /* This will be our master css file, feel free to create more if need be! */
+/* Scrollbar CSS */
+/* Firefox */
+* {
+    scrollbar-width: auto;
+    scrollbar-color: rgb(255,247,172) rgb(255,171,248);
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 6px;
+}
+
+*::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: rgb(255,247,172);
+    border-radius: 10px;
+}
 body {
     background: rgb(255,247,172);
     background: linear-gradient(90deg, rgba(255,247,172,1) 30%, rgba(255,171,248,1) 63%);
     font-family: 'Open Sans', sans-serif;
     margin: 0px;
     padding: 0px;
+    overflow: overlay;
 }
 
 .login-form {
@@ -31,45 +52,6 @@ body {
 
 input {
     margin-bottom: 15px;
-}
-
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 5px;
-    padding-left: 20px;
-    padding-right: 20px;
-    background-color: #e7e7e7;
-    color: rgb(0, 0, 0);
-    box-shadow: 5px 10px 18px #0000004c;
-}
-
-.navbar .logo img {
-    height: 125px;
-}
-
-.navbar .nav-links ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-}
-
-.navbar .nav-links ul li {
-    margin: 0 10px;
-}
-
-.navbar .nav-links ul li a {
-    color: rgb(67, 22, 22);
-    text-decoration: none;
-    font-weight: bold;
-    text-transform: uppercase;
-    transition: color 0.2s ease-in-out;
-}
-
-.navbar .nav-links ul li a:hover {
-    color: rgb(65, 41, 185);
 }
 
 /* CSS FOR MAIN DASHBOARD */
