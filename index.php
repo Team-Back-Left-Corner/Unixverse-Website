@@ -33,7 +33,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset=utf-8" />
+	<meta charset="utf-8" />
 	<title>Login</title>
 	<link rel="stylesheet" href="assets/css/style.css">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
