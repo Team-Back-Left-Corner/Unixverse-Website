@@ -27,7 +27,7 @@
 
                 <p>Here are some basic commands for getting started with ssh:</p>
                 <ul>
-                    <li><strong>“ssh”</strong> Is a command that can be used to initiate an SSH connection. The usage is: “ssh [username]@[hostname/server IP]</li>
+                    <li><strong>“ssh”</strong> is a command that can be used to initiate an SSH connection. The usage is: “ssh [username]@[hostname/server IP]</li>
                     <li><strong>“scp”</strong> is a command that can be used to transfer files securely over SSH. The usage is: “scp [option] [user_name@source_host:path/to/source/file] [user_name@target_host:target/path]”</li>
                     <li><strong>“ssh-keygen”</strong> is a command that can be used to generate a public/private key pair for SSH authentication.</li>
                 </ul>
