@@ -81,8 +81,10 @@
             </ul>
         </section>
 
-        <a href="../quizzes/chapter_one_quiz.php" class="button-chap">Chapter Quiz!</a>
-        <a href="chapter2.php" class="button-chap">Next Chapter</a>
+        <a href="../quizzes/chapter_five_quiz.php" class="button-chap">Chapter Quiz!</a>
+        <a href="../landing.php" class="button-chap">Dashboard</a>
+
+        
 
     </div>
     
