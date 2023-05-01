@@ -47,6 +47,7 @@
 	<title>Unixverse</title>
 	<link rel="stylesheet" href="<?php echo $path;?>assets/css/style.css">
 	<link rel="stylesheet" href="<?php echo $path;?>assets/css/nav.css">
+	<link rel="stylesheet" href="<?php echo $path;?>assets/css/footer.css">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
 </head>
