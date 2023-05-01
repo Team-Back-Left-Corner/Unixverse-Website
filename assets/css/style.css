@@ -1,8 +1,31 @@
 /* This will be our master css file, feel free to create more if need be! */
+/* Scrollbar CSS */
+/* Firefox */
+* {
+    scrollbar-width: auto;
+    scrollbar-color: rgb(255,247,172) rgb(255,171,248);
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 6px;
+}
+
+*::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: rgb(255,247,172);
+    border-radius: 10px;
+}
 body {
     background: rgb(255,247,172);
     background: linear-gradient(90deg, rgba(255,247,172,1) 30%, rgba(255,171,248,1) 63%);
     font-family: 'Open Sans', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    overflow: overlay;
 }
 
 .login-form {
@@ -31,43 +54,167 @@ input {
     margin-bottom: 15px;
 }
 
-.sidebar {
-    height: 100%;
-    width: 200px; /* adjust this value as needed */
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #f1f1f1;
-    overflow-x: hidden;
-    padding-top: 20px;
-    padding: 15px;
-  }
-  
-  .sidebar ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .sidebar li {
-    padding: 8px 16px;
-    border-bottom: 1px solid #ccc;
-  }
-  
-  .sidebar li a {
-    display: block;
-    color: #000;
-    text-decoration: none;
-  }
-  
-  .sidebar li a:hover {
-    background-color: #ddd;
-  }  
+/* CSS FOR MAIN DASHBOARD */
 
-  .mainpage {
-    margin-left: 250px;
-  }
+.dashboard {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 30px;
+    border-radius: 15px;
+    align-self: center;
+    max-width: 70%;
+    background-color: #f1f1f1;
+    box-shadow: 5px 10px 18px #0000004c;
+    /* animation: 2s ease-out 0.5s 1 slideInFromLeft; */
+}
+
+.progress-bars {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.hello-msg {
+    margin-left: 20px;
+}
+
+/* @keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-150%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+} */
+
+/* Progress bar CSS */
+
+.circular-progress{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* This is how we can control this different progress bars  */
+/* .one {
+    --amt: 270deg; 
+    background: conic-gradient(rgba(255,171,248,1) var(--amt), rgb(187, 187, 187) 0deg);
+}
+.two {
+    --amt: 90deg; 
+    background: conic-gradient(rgba(255,171,248,1) var(--amt), rgb(187, 187, 187) 0deg);
+}
+.three {
+    --amt: 180deg; 
+    background: conic-gradient(rgba(255,171,248,1) var(--amt), rgb(187, 187, 187) 0deg);
+} */
+
+.circular-progress::before{
+    position: absolute;
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    background-color: white;
+    content: "";
+}
+.progress-value{
+    position: relative;
+    font-size: 20px;
+    color: rgba(255,171,248,1);
+}
+
+/* CSS FOR CHAPTERS AND QUIZ SELECTION */
+
+
+/* <div class="chapters">
+<div class="chapter-column">
+    <div class="chapter">
+        <h2>Chapter
+    </div>
+    <div class="chapter"></div>
+    <div class="chapter"></div>
+    <div class="chapter"></div>
+</div>
+<div class="chapter-column">
+    <div class="chapter"></div>
+    <div class="chapter"></div>
+    <div class="chapter"></div>
+    <div class="chapter"></div>
+</div>
+</div> */
+
+.chapters {
+    display: flex;
+    flex-direction: row;
+}
+
+.chapter-column {
+    width: 100%;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.chapter {
+    /* background-color: rgb(221, 221, 221); */
+    background: linear-gradient(90deg, rgba(205,254,216,1) 30%, rgba(148,186,255,1) 76%);
+    border: solid 1px black;
+    border-radius: 10px;
+    width: 100%;
+    height: 300px;
+    padding: 10px;
+    margin-top: 20px;
+    transition: 0.2s;
+    cursor: pointer;
+    /* margin: 20px; */
+}
+
+.link {
+    text-decoration: none;
+    color: #000;
+    transition: 0.2s;
+}
+.link:hover {
+    text-decoration: none;
+    color: #000;
+    text-decoration: wavy;
+    font-size:17px;
+}
+
+.chapter:hover {
+    box-shadow: 5px 10px 18px #0000004c;
+}
+
+.button-link {
+    margin-top: 15px;
+    display: inline-block;
+    outline: 0;
+    cursor: pointer;
+    border: 1px solid #000;
+    border-radius: 3px;
+    color: #000;
+    background: #fff;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 40px;
+    padding: 5px 20px;
+    text-align:center;
+    transition-duration: .15s;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(.4,0,.2,1);
+}
+
+.button-link:hover{
+    background: rgb(251, 193, 245);
+}
 
 input[type=submit] {
     margin-top: 15px;
@@ -125,7 +272,7 @@ input[type=button] {
     transition-property: all;
     transition-timing-function: cubic-bezier(.4,0,.2,1);
 }
-    
+
 input[type=submit]:hover {
     background: rgb(251, 193, 245);
 }
@@ -145,29 +292,3 @@ input[type=button]:hover {
 .clearfix input {
     margin: 10px;
 }
-  
-
-  
-  
-  
-  
-
-/* form div
-{
-    margin: 1em;
-}
-form div label
-{
-    float: left;
-    width: 10%;
-}
-form div.radio {
-    float: left;
-}
-input{
-   margin-top: 15px;
-}
-.clearfix {
-    clear: both;
-} */
-

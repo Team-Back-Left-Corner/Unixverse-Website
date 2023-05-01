@@ -1,0 +1,50 @@
+footer {
+    background-color: #f1f1f1;
+    overflow: hidden;
+    height: 60px;
+    width: 150px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 5px 10px;
+    border-radius: 10em 10em 0.5em 10em;
+    transition: all 0.5s;
+    padding: 20px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    box-shadow: 5px 10px 18px #0000004c;
+}
+.footernames {
+    opacity: 0;
+    transition: opacity 0.5s;
+    text-align: right;
+    padding: 10px 50px 10px 0px;
+    width: 110%;
+    transform: translate(-90px);
+}
+footer:hover img {
+    width:300px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    transition: width 0.5s;
+}
+footer:hover .footernames {
+    opacity: 1;
+}
+
+footer:hover {
+    width: 400px;
+    height: 400px;
+}
+
+.footernames p:hover{
+    background-color: pink;
+    cursor: pointer;
+}
+
+.footernames a {
+    text-decoration: none;
+    color: rgb(67, 22, 22);
+}
+
