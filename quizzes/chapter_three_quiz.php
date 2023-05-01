@@ -12,134 +12,107 @@
 		
             <ol>
                 <li>
-                    <h3>Which command can we use to change the owner of the file?</h3>
+                    <h3>What command can be used to initiate a(n) ssh file transfer protocol session?</h3>
                     
                     <div>
                         <input type="radio" name="question-1-answers" id="question-1-answers-A" value="A" />
-                        <label for="question-1-answers-A">A) chmod </label>
+                        <label for="question-1-answers-A">A) scp </label>
                     </div>
                     
                     <div>
                         <input type="radio" name="question-1-answers" id="question-1-answers-B" value="B" />
-                        <label for="question-1-answers-B">B) chown </label>
+                        <label for="question-1-answers-B">B) sfpt </label>
                     </div>
                     
                     <div>
                         <input type="radio" name="question-1-answers" id="question-1-answers-C" value="C" />
-                        <label for="question-1-answers-C">C) chroot </label>
+                        <label for="question-1-answers-C">C) ppse </label>
                     </div>
                     
                     <div>
                         <input type="radio" name="question-1-answers" id="question-1-answers-D" value="D" />
-                        <label for="question-1-answers-D">D) chattr </label>
+                        <label for="question-1-answers-D">D) ssh </label>
                     </div>
                 
                 </li>
                 
                 <li>
                 
-                    <h3>Which command do we use to create a directory?</h3>
+                    <h3>What is the default port number for ssh?</h3>
                     
                     <div>
                         <input type="radio" name="question-2-answers" id="question-2-answers-A" value="A" />
-                        <label for="question-2-answers-A">A) find </label>
+                        <label for="question-2-answers-A">A) 20 </label>
                     </div>
                     
                     <div>
                         <input type="radio" name="question-2-answers" id="question-2-answers-B" value="B" />
-                        <label for="question-2-answers-B">B) mkdir </label>
+                        <label for="question-2-answers-B">B) 22 </label>
                     </div>
                     
                     <div>
                         <input type="radio" name="question-2-answers" id="question-2-answers-C" value="C" />
-                        <label for="question-2-answers-C">C) mount </label>
+                        <label for="question-2-answers-C">C) 25 </label>
                     </div>
                     
                     <div>
                         <input type="radio" name="question-2-answers" id="question-2-answers-D" value="D" />
-                        <label for="question-2-answers-D">D) mv </label>
+                        <label for="question-2-answers-D">D) 80 </label>
                     </div>
                 
                 </li>
                 
                 <li>
                 
-                    <h3>Which command is used to check the inode utilization of a filesystem?</h3>
+                    <h3>What does SSH stand for?</h3>
                     
                     <div>
                         <input type="radio" name="question-3-answers" id="question-3-answers-A" value="A" />
-                        <label for="question-3-answers-A">A) df -i </label>
+                        <label for="question-3-answers-A">A) Secure Hyperlink Protocol </label>
                     </div>
                     
                     <div>
                         <input type="radio" name="question-3-answers" id="question-3-answers-B" value="B" />
-                        <label for="question-3-answers-B">B) ls -i </label>
+                        <label for="question-3-answers-B">B) Secure System Handling </label>
                     </div>
                     
                     <div>
                         <input type="radio" name="question-3-answers" id="question-3-answers-C" value="C" />
-                        <label for="question-3-answers-C">C) stat -i </label>
+                        <label for="question-3-answers-C">C) Secure Shell Protocol </label>
                     </div>
                     
                     <div>
                         <input type="radio" name="question-3-answers" id="question-3-answers-D" value="D" />
-                        <label for="question-3-answers-D">D) df -h</label>
+                        <label for="question-3-answers-D">D) Secure System HTTP </label>
                     </div>
                 
                 </li>
                 
                 <li>
                 
-                    <h3>Which command is used to list the files in a directory?</h3>
+                    <h3>What is the command to generate a new SSH key pair?</h3>
                     
                     <div>
                         <input type="radio" name="question-4-answers" id="question-4-answers-A" value="A" />
-                        <label for="question-4-answers-A">A) cp </label>
+                        <label for="question-4-answers-A">A) ssh-keygen </label>
                     </div>
                     
                     <div>
                         <input type="radio" name="question-4-answers" id="question-4-answers-B" value="B" />
-                        <label for="question-4-answers-B">B) rm </label>
+                        <label for="question-4-answers-B">B) ssh-add </label>
                     </div>
                     
                     <div>
                         <input type="radio" name="question-4-answers" id="question-4-answers-C" value="C" />
-                        <label for="question-4-answers-C">C) ls </label>
+                        <label for="question-4-answers-C">C) ssh-copy-id </label>
                     </div>
                     
                     <div>
                         <input type="radio" name="question-4-answers" id="question-4-answers-D" value="D" />
-                        <label for="question-4-answers-D">D) move </label>
+                        <label for="question-4-answers-D">D) ssh-agent </label>
                     </div>
                 
                 </li>
-                
-                <li>
-                
-                    <h3>Which command is used to display the current directory?</h3>
-                    
-                    <div>
-                        <input type="radio" name="question-5-answers" id="question-5-answers-A" value="A" />
-                        <label for="question-5-answers-A">A) cd </label>
-                    </div>
-                    
-                    <div>
-                        <input type="radio" name="question-5-answers" id="question-5-answers-B" value="B" />
-                        <label for="question-5-answers-B">B) pwd </label>
-                    </div>
-                    
-                    <div>
-                        <input type="radio" name="question-5-answers" id="question-5-answers-C" value="C" />
-                        <label for="question-5-answers-C">C) emacs </label>
-                    </div>
-                    
-                    <div>
-                        <input type="radio" name="question-5-answers" id="question-5-answers-D" value="D" />
-                        <label for="question-5-answers-D">D) more </label>
-                    </div>
-                
-                </li>
-            
             </ol>
             
             <input type="submit" value="Submit" class="submitbtn" />
@@ -149,6 +122,4 @@
 	</div>
 	
 </body>
-<?php include($path . "assets/inc/footer.php");?>
-
 </html>

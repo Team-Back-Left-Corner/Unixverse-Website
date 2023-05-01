@@ -12,130 +12,104 @@
 		
             <ol>
                 <li>
-                    <h3>Which command can we use to change the owner of the file?</h3>
+                    <h3>What is the command to save changes and exit vim?</h3>
                     
                     <div>
                         <input type="radio" name="question-1-answers" id="question-1-answers-A" value="A" />
-                        <label for="question-1-answers-A">A) chmod </label>
+                        <label for="question-1-answers-A">A) :wq </label>
                     </div>
                     
                     <div>
                         <input type="radio" name="question-1-answers" id="question-1-answers-B" value="B" />
-                        <label for="question-1-answers-B">B) chown </label>
+                        <label for="question-1-answers-B">B) :q </label>
                     </div>
                     
                     <div>
                         <input type="radio" name="question-1-answers" id="question-1-answers-C" value="C" />
-                        <label for="question-1-answers-C">C) chroot </label>
+                        <label for="question-1-answers-C">C) :xx </label>
                     </div>
                     
                     <div>
                         <input type="radio" name="question-1-answers" id="question-1-answers-D" value="D" />
-                        <label for="question-1-answers-D">D) chattr </label>
+                        <label for="question-1-answers-D">D) All of the above </label>
                     </div>
                 
                 </li>
                 
                 <li>
                 
-                    <h3>Which command do we use to create a directory?</h3>
+                    <h3>What is the command to show help in Nano?</h3>
                     
                     <div>
                         <input type="radio" name="question-2-answers" id="question-2-answers-A" value="A" />
-                        <label for="question-2-answers-A">A) find </label>
+                        <label for="question-2-answers-A">A) Ctrl+X </label>
                     </div>
                     
                     <div>
                         <input type="radio" name="question-2-answers" id="question-2-answers-B" value="B" />
-                        <label for="question-2-answers-B">B) mkdir </label>
+                        <label for="question-2-answers-B">B) Ctrl+G </label>
                     </div>
                     
                     <div>
                         <input type="radio" name="question-2-answers" id="question-2-answers-C" value="C" />
-                        <label for="question-2-answers-C">C) mount </label>
+                        <label for="question-2-answers-C">C) Ctrl+S </label>
                     </div>
                     
                     <div>
                         <input type="radio" name="question-2-answers" id="question-2-answers-D" value="D" />
-                        <label for="question-2-answers-D">D) mv </label>
+                        <label for="question-2-answers-D">D) Ctrl+J </label>
                     </div>
                 
                 </li>
                 
                 <li>
                 
-                    <h3>Which command is used to check the inode utilization of a filesystem?</h3>
+                    <h3>What command can be used to open a file in the Vim editor in read-only mode?</h3>
                     
                     <div>
                         <input type="radio" name="question-3-answers" id="question-3-answers-A" value="A" />
-                        <label for="question-3-answers-A">A) df -i </label>
+                        <label for="question-3-answers-A">A) vim -x </label>
                     </div>
                     
                     <div>
                         <input type="radio" name="question-3-answers" id="question-3-answers-B" value="B" />
-                        <label for="question-3-answers-B">B) ls -i </label>
+                        <label for="question-3-answers-B">B) vim -r </label>
                     </div>
                     
                     <div>
                         <input type="radio" name="question-3-answers" id="question-3-answers-C" value="C" />
-                        <label for="question-3-answers-C">C) stat -i </label>
+                        <label for="question-3-answers-C">C) vim -f </label>
                     </div>
                     
                     <div>
                         <input type="radio" name="question-3-answers" id="question-3-answers-D" value="D" />
-                        <label for="question-3-answers-D">D) df -h</label>
+                        <label for="question-3-answers-D">D) vim -r </label>
                     </div>
                 
                 </li>
                 
                 <li>
                 
-                    <h3>Which command is used to list the files in a directory?</h3>
+                    <h3> What command is used to move to the next page in Nano?</h3>
                     
                     <div>
                         <input type="radio" name="question-4-answers" id="question-4-answers-A" value="A" />
-                        <label for="question-4-answers-A">A) cp </label>
+                        <label for="question-4-answers-A">A) Ctrl+X </label>
                     </div>
                     
                     <div>
                         <input type="radio" name="question-4-answers" id="question-4-answers-B" value="B" />
-                        <label for="question-4-answers-B">B) rm </label>
+                        <label for="question-4-answers-B">B) Ctrl+P </label>
                     </div>
                     
                     <div>
                         <input type="radio" name="question-4-answers" id="question-4-answers-C" value="C" />
-                        <label for="question-4-answers-C">C) ls </label>
+                        <label for="question-4-answers-C">C) Ctrl+E </label>
                     </div>
                     
                     <div>
                         <input type="radio" name="question-4-answers" id="question-4-answers-D" value="D" />
-                        <label for="question-4-answers-D">D) move </label>
-                    </div>
-                
-                </li>
-                
-                <li>
-                
-                    <h3>Which command is used to display the current directory?</h3>
-                    
-                    <div>
-                        <input type="radio" name="question-5-answers" id="question-5-answers-A" value="A" />
-                        <label for="question-5-answers-A">A) cd </label>
-                    </div>
-                    
-                    <div>
-                        <input type="radio" name="question-5-answers" id="question-5-answers-B" value="B" />
-                        <label for="question-5-answers-B">B) pwd </label>
-                    </div>
-                    
-                    <div>
-                        <input type="radio" name="question-5-answers" id="question-5-answers-C" value="C" />
-                        <label for="question-5-answers-C">C) emacs </label>
-                    </div>
-                    
-                    <div>
-                        <input type="radio" name="question-5-answers" id="question-5-answers-D" value="D" />
-                        <label for="question-5-answers-D">D) more </label>
+                        <label for="question-4-answers-D">D) Ctrl+V </label>
                     </div>
                 
                 </li>
@@ -149,6 +123,4 @@
 	</div>
 	
 </body>
-<?php include($path . "assets/inc/footer.php");?>
-
 </html>
