@@ -42,7 +42,7 @@
 			<div style="display:inline-block;">
 				<h3>Highest Quiz Score:</h3>
 				<div class="circular-progress three">
-							<span class="progress-value">50%</span>
+							<span class="progress-value"><?php echo $highest_score;?>%</span>
 				</div>
 			</div>
 		</div>
@@ -57,7 +57,7 @@
 						<li><a class="link" href="#">Section 2 Directory structure / Navigation</a></li>
 					</ul>
 					<div style="display:flex;margin-left:20px;">
-						<a href="chapter_one_quiz.php" class="button-link">Chapter Quiz</a>
+						<a href="quizzes/chapter_one_quiz.php" class="button-link">Chapter Quiz</a>
 						<h4 style="margin-left:20px;">Current Score: <?php echo $_SESSION['quiz_one_hs'];?>%</h4>
 					</div>
 				</div>
@@ -70,7 +70,7 @@
 						<li><a class="link" href="#">Section 3 CHMOD</a></li>
 					</ul>
 					<div style="display:flex;margin-left:20px;">
-						<a href="section_two_quiz.php" class="button-link">Chapter Quiz</a>
+						<a href="quizzes/chapter_two_quiz.php" class="button-link">Chapter Quiz</a>
 						<h4 style="margin-left:20px;">Current Score: <?php echo $_SESSION['quiz_two_hs'];?>%</h4>
 					</div>
 				</div>
@@ -83,7 +83,7 @@
 						<li><a class="link" href="#">Section 3 Filezilla</a></li>
 					</ul>
 					<div style="display:flex;margin-left:20px;">
-						<a href="section_one_quiz.php" class="button-link">Chapter Quiz</a>
+						<a href="quizzes/chapter_three_quiz.php" class="button-link">Chapter Quiz</a>
 						<h4 style="margin-left:20px;">Current Score: <?php echo $_SESSION['quiz_three_hs'];?>%</h4>
 					</div>
 				</div>
@@ -98,7 +98,7 @@
 						<li><a class="link" href="#">Section 3 Emacs</a></li>
 					</ul>
 					<div style="display:flex;margin-left:20px;">
-						<a href="section_one_quiz.php" class="button-link">Chapter Quiz</a>
+						<a href="quizzes/chapter_four_quiz.php" class="button-link">Chapter Quiz</a>
 						<h4 style="margin-left:20px;">Current Score: <?php echo $_SESSION['quiz_four_hs'];?>%</h4>
 					</div>
 				</div>
@@ -110,7 +110,7 @@
 						<li><a class="link" href="#">Section 2 arp + traceroute</a></li>
 					</ul>
 					<div style="display:flex;margin-left:20px;">
-						<a href="chapter_one_quiz.php" class="button-link">Chapter Quiz</a>
+						<a href="quizzes/chapter_five_quiz.php" class="button-link">Chapter Quiz</a>
 						<h4 style="margin-left:20px;">Current Score: <?php echo $_SESSION['quiz_five_hs'];?>%</h4>
 					</div>
 				</div>

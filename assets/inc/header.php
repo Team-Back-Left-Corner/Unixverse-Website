@@ -19,20 +19,34 @@
 		return $percent / 100 * 360;
 	}
 
-	$completion_amt = $_SESSION['quiz_one_hs'] + $_SESSION['quiz_two_hs'] + $_SESSION['quiz_three_hs'] + $_SESSION['quiz_four_hs'] + $_SESSION['quiz_five_hs'];
-	$course_completion = calculatePercentage($completion_amt, 500);
+	$high_scores = [(int)$_SESSION['quiz_one_hs'],(int)$_SESSION['quiz_two_hs'],(int)$_SESSION['quiz_three_hs'],(int)$_SESSION['quiz_four_hs'],(int)$_SESSION['quiz_five_hs']];
+
+	$completion_amt = 0;
+	$highest_score = 0;
+	$attempted_quizzes = 0;
+	foreach ($high_scores as $hs) {
+		if($hs != 0){
+			$attempted_quizzes+=1;
+		}
+		if($hs > $highest_score){
+			$highest_score = $hs;
+		}
+		$completion_amt += $hs;
+	}
+
+	$course_completion = ($attempted_quizzes/5 * 100);
 	$quiz_average = $completion_amt/5;
 	$amt_one = percentToDegree($course_completion);
     $amt_two = percentToDegree($quiz_average);
-    $amt_three = percentToDegree(50);
+    $amt_three = percentToDegree($highest_score);
 ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset=utf-8/>
 	<title>Unixverse</title>
-	<link rel="stylesheet" href="assets/css/style.css">
-	<link rel="stylesheet" href="assets/css/nav.css">
+	<link rel="stylesheet" href="<?php echo $path;?>assets/css/style.css">
+	<link rel="stylesheet" href="<?php echo $path;?>assets/css/nav.css">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
 </head>
