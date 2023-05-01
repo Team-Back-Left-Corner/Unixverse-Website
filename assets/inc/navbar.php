@@ -18,19 +18,19 @@
                 <div class="subnav-content">
                     <a href="#">Remote Host</a>
                     <a href="#">Networking</a>
-                    <a href="#">Permissions</a>
-                    <a href="#">Tools</a>
-                    <a href="#">Filesystem</a>
+                    <a href="<?php echo $path; ?>sections/chapter3.php">Permissions</a>
+                    <a href="<?php echo $path; ?>sections/chapter2.php">Tools</a>
+                    <a href="<?php echo $path; ?>sections/chapter1.php">Filesystem</a>
                 </div>
             </div>
             <div class="subnav">
                 <div class="subnavDIV">Quizzes</div>
                 <div class="subnav-content">
-                    <a href="#">Chapter 5 Quiz</a>
-                    <a href="#">Chapter 4 Quiz</a>
-                    <a href="#">Chapter 3 Quiz</a>
-                    <a href="#">Chapter 2 Quiz</a>
-                    <a href="#">Chapter 1 Quiz</a>
+                    <a href="<?php echo $path; ?>quizzes/chapter_five_quiz.php">Chapter 5 Quiz</a>
+                    <a href="<?php echo $path; ?>quizzes/chapter_four_quiz.php">Chapter 4 Quiz</a>
+                    <a href="<?php echo $path; ?>quizzes/chapter_three_quiz.php">Chapter 3 Quiz</a>
+                    <a href="<?php echo $path; ?>quizzes/chapter_two_quiz.php">Chapter 2 Quiz</a>
+                    <a href="<?php echo $path; ?>quizzes/chapter_one_quiz.php">Chapter 1 Quiz</a>
                 </div>
             </div>
 
