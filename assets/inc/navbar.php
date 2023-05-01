@@ -16,8 +16,8 @@
             <div class="subnav">
                 <div class="subnavDIV">Sections</div>
                 <div class="subnav-content">
-                    <a href="#">Remote Host</a>
-                    <a href="#">Networking</a>
+                    <a href="<?php echo $path; ?>sections/chapter5.php">Remote Host</a>
+                    <a href="<?php echo $path; ?>sections/chapter4.php">Networking</a>
                     <a href="<?php echo $path; ?>sections/chapter3.php">Permissions</a>
                     <a href="<?php echo $path; ?>sections/chapter2.php">Tools</a>
                     <a href="<?php echo $path; ?>sections/chapter1.php">Filesystem</a>
