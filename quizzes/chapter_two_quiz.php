@@ -149,4 +149,6 @@
 	</div>
 	
 </body>
+<?php include($path . "assets/inc/footer.php");?>
+
 </html>
