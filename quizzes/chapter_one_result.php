@@ -47,4 +47,3 @@
 
             <a href="<?php echo $path;?>landing.php" class="button-link"/>Return to Dashboard</a>
 </div>
-<?php include($path . "assets/inc/footer.php");?>
