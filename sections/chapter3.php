@@ -66,7 +66,7 @@
         </section>
 
         <a href="../quizzes/chapter_three_quiz.php" class="button-chap">Chapter Quiz!</a>
-        <a href="#" class="button-chap">Next Chapter</a>
+        <a href="chapter4.php" class="button-chap">Next Chapter</a>
 
 
     </div>
