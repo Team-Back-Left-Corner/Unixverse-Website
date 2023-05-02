@@ -11,9 +11,6 @@
                 <div class="subnavDIV">About Us</div>
             </div>
             <div class="subnav">
-                <div class="subnavDIV">Leave a comment</div>
-            </div>
-            <div class="subnav">
                 <div class="subnavDIV">Sections</div>
                 <div class="subnav-content">
                     <a href="<?php echo $path; ?>sections/chapter5.php">Remote Host</a>
