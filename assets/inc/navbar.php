@@ -1,6 +1,6 @@
 <div class="navbar">
 		<div class="logo">
-			<img src="<?php echo $path;?>assets/img/unixverse.png">
+			<img src="<?php echo $path;?>assets/img/unixverse.png" class="logo">
 		</div>
 
 		<div class="nav-links">

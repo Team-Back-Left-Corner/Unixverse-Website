@@ -75,3 +75,7 @@
 .subnav:hover .subnav-content {
     display: block;
 }
+
+.logo {
+    width: unset;
+}

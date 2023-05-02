@@ -1,5 +1,5 @@
 <footer>
-    <img src="<?php echo $path;?>assets/img/unixverseSmall2.svg" width="150" alt="Unixverse small logo">
+    <img src="<?php echo $path;?>assets/img/unixverseSmall2.svg" width="150" class="logo" alt="Unixverse small logo">
     <div class="footernames">
         <a href="https://people.rit.edu/~jgl2651/ISTE240/"><p>Jack Lindsey-noble</p></a>
         <a href="https://people.rit.edu/~wwg7211/ISTE240/"><p>Cade Gilbert</p></a>
