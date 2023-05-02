@@ -48,3 +48,7 @@ footer:hover {
     color: rgb(67, 22, 22);
 }
 
+.logo {
+    width: unset;
+}
+
