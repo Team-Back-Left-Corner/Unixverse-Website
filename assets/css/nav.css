@@ -79,3 +79,8 @@
 .logo {
     width: unset;
 }
+
+.navbar a {
+    text-decoration: none;
+    cursor: pointer;
+}
