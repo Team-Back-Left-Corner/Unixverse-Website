@@ -290,3 +290,38 @@ input[type=button]:hover {
 .clearfix input {
     margin: 10px;
 }
+
+.aboutus {
+    margin: auto;
+    text-align: center;
+    padding: 10em;
+}
+.aboutus .people {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background: linear-gradient(90deg, rgba(205,254,216,1) 30%, rgba(148,186,255,1) 76%);
+    border: solid 1px black;
+    border-radius: 10px;
+    width: 99%;
+    height: 300px;
+    padding: 10px;
+    margin-top: 20px;
+    transition: 0.2s;
+    box-shadow: 5px 10px 18px #0000004c;
+
+}
+.aboutus .person {
+    width: 20%;
+    height: 275px;
+    background-color: rgb(251, 193, 245);
+    margin: auto;
+    border-radius: 10px;
+    color: rgb(67, 22, 22);
+    transition: all 0.2s;
+    box-shadow: 5px 10px 18px #0000004c;
+}
+
+.aboutus .person:hover {
+    transform: scale(1.05);
+}
