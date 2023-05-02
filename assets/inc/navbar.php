@@ -8,7 +8,7 @@
                 <a href="<?php echo $path;?>assets/inc/clearSession.php"><div class="subnavDIV">Log out</div></a>
             </div>
             <div class="subnav">
-                <div class="subnavDIV">About Us</div>
+                <a href="<?php echo $path; ?>about.php"><div class="subnavDIV">About Us</div></a>
             </div>
             <div class="subnav">
                 <div class="subnavDIV">Sections</div>
